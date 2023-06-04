@@ -10,14 +10,13 @@ useEffect(() => {
   const obeserver = new IntersectionObserver((entries)=>{
     const entry  = entries[1];
     console.log(entry);
-    gsap.fromTo('.discription',{y: -100},{ y:0})
-    gsap.fromTo(".BOXA", { x: -400,y: -200, },{duration: 1, x:0,y:20});
-    gsap.fromTo(".BOXB", { x: -400,y: -200, },{duration: 2, x:0,y:20});
-    gsap.fromTo(".BOXC", { x: -400,y: -200, },{duration: 3, x:0,y:20});
-    gsap.fromTo(".BOXD", { x: 0,y: -200, },{duration: 3, x:-40,y:20});
+    gsap.fromTo('.discription',{y: -100},{ y:0,duration: 5})
+    gsap.fromTo(".BOXA", { x: -400,y: -200, },{duration: 4, x:0,y:20});
+    gsap.fromTo(".BOXB", { x: -400,y: -200, },{duration: 6, x:0,y:20});
+    gsap.fromTo(".BOXC", { x: -400,y: -200, },{duration: 5, x:0,y:20});
+    gsap.fromTo(".BOXD", { x: 0,y: -200, },{duration: 5, x:-40,y:20});
     gsap.fromTo(".BOXE", {y: -200, },{duration: 2,y:20});
     gsap.fromTo(".Aboutme", {y: 200, },{duration: 10, y: 20});
-    
 
 
   })
@@ -28,7 +27,7 @@ useEffect(() => {
  
   return (
     <div className='About w-full md:h-1/2 h-screen lg:h-screen   '>
-      <div className=" z-10 absolute" > <img src={Background} alt="" /></div>
+      <div className=" z-10 absolute" > <img  src={Background} alt="" /></div>
       <div className="w-full h-full z-20  md:flex ">
         <div className=" w-full md:w-2/5 h-1/2 md:h-full relative overflow-hidden">
           <div className="BOXA lg:w-[300px]  w-[150px] lg:h-[300px] h-[150px] relative bg-gray-600 left-20 top-20 rounded-lg z-20"></div>
@@ -63,8 +62,8 @@ useEffect(() => {
             </div>
 
 
-            <div className="flex w-full h-1/4 absolute ">
-          <div className="BOXD lg:w-[280px] w-[150px] h-[150px] lg:h-[250px]  relative top-[30%] bg-gray-600  left-[60%] md:left-[65%] md:top-[80%] rounded-lg z-20 "></div>
+            <div className="flex w-full h-1/4 absolute bottom-1 lg:top-[100%]">
+          <div className="BOXD lg:w-[280px] w-[150px] h-[150px] lg:h-[250px]  relative  bg-gray-600 top-[30%] left-[60%] md:left-[65%] md:top-[80%] rounded-lg z-20 "></div>
           <div className="BOXE w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] relative border-[2px] md:border-0 md:bg-red-500 rounded-lg z-10  md:top-[35%] md:left-[25%] left-[5%] "></div>
           </div>
           </div>

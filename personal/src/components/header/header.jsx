@@ -9,7 +9,7 @@ document.getElementById('Navitem')
         <div className="w-1/2"></div>
         <div className="Navitem w-1/2 md:justify-center items-center flex white" id='Navitem'>
         <ul className=' flex gap-20'>
-            <li>Home</li>
+            <li>Home </li>
             <li>About</li>
             <li>Contact</li>
         </ul>
