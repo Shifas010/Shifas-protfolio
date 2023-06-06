@@ -50,7 +50,7 @@ function Home() {
               
              </div>
              <div className="lg:h-/6  w-full flex pt-[50px]">
-              <div className="w-1/2  h-full  items-center flex"><button  className={ HiButtoncolor?`w-[100px] lg:w-[150px] h[30px] lg:h-[50px] bg-red-500`:"w-[150px] h-[50px] border" } onMouseEnter={()=>{
+              <div className="w-1/2  h-full  items-center flex"><button  className={ HiButtoncolor?`w-[100px] lg:w-[150px] h[30px] lg:h-[50px] bg-red-500`:"w-[100px] lg:w-[150px] h[30px] lg:h-[50px] border" } onMouseEnter={()=>{
                   setHibuttoncolor(true)
                   setAboutmebuttoncolor(false)
             

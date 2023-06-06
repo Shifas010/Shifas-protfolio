@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from 'react'
 import { Button } from '../reuse'
 import { gsap } from 'gsap'
 import Background from '../../assets/personalBackground.svg'
-
+import eatsleeep from '../../assets/best quality.jpg'
+import computerman from '../../assets/perfection.jpg'
 function About() {
 const discription = useRef()
 useEffect(() => {
@@ -27,10 +28,10 @@ useEffect(() => {
  
   return (
     <div className='About w-full md:h-1/2 h-screen lg:h-screen   '>
-      <div className=" z-10 absolute" > <img  src={Background} alt="" /></div>
+      <div className=" z-10 absolute " > <img  src={Background} alt="" /></div>
       <div className="w-full h-full z-20  md:flex ">
         <div className=" w-full md:w-2/5 h-1/2 md:h-full relative overflow-hidden">
-          <div className="BOXA lg:w-[300px]  w-[150px] lg:h-[300px] h-[150px] relative bg-gray-600 left-20 top-20 rounded-lg z-20"></div>
+          <div className="BOXA lg:w-[300px]  w-[150px] lg:h-[300px] h-[150px] relative bg-gray-600 left-20 top-20 rounded-lg z-20 overflow-hidden"><img className='flex w-[400px] justify-center items-center h-full ' src={eatsleeep} alt="" /></div>
           <div className="BOXB lg:w-[200px] w-[100px] h-[100px] lg:h-[200px] rounded-lg border-r-[2px] border-b-[2px] border-t-[2px] z-30 relative bottom-[20%]"></div>
           <div className="BOXC w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] relative bg-red-500 rounded-lg z-10 bottom-[30%] left-10"></div>
 
@@ -63,8 +64,8 @@ useEffect(() => {
 
 
             <div className="flex w-full h-1/4 absolute bottom-1 lg:top-[100%]">
-          <div className="BOXD lg:w-[280px] w-[150px] h-[150px] lg:h-[250px]  relative  bg-gray-600 top-[30%] left-[60%] md:left-[65%] md:top-[80%] rounded-lg z-20 "></div>
-          <div className="BOXE w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] relative border-[2px] md:border-0 md:bg-red-500 rounded-lg z-10  md:top-[35%] md:left-[25%] left-[5%] "></div>
+          <div className="BOXD lg:w-[280px] w-[150px] h-[150px] lg:h-[250px]  relative  bg-gray-600 top-[30%] left-[60%] md:left-[65%] md:top-[80%] rounded-lg z-20  overflow-hidden flex"><img className='w-600px h-400px' src={computerman} alt="" /></div>
+          <div className="BOXE w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] relative border-[2px] md:border-0 md:bg-red-500 rounded-lg z-10  md:top-[60%] lg:top-[30%] md:left-[25%] left-[5%] "></div>
           </div>
           </div>
         </div>
